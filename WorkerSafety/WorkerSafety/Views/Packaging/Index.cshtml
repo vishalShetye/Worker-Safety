@@ -1,0 +1,20 @@
+﻿@model IEnumerable<WorkerSafety.Models.WorkerModel>
+@{
+    ViewData["Title"] = "Packaging Page";
+}
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+        $(function () {
+            var baseUrlPath;
+            baseUrlPath = window.location + "Packaging/Index";
+            setInterval(function () { $('#PackagingDashboard').load(baseUrlPath); }, 3000); // every 3 sec
+        });
+</script>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div id="PackagingDashboard" class="panel-body">
+            @{ await Html.RenderPartialAsync("_PackagingDashboard");}
+        </div>
+    </div>
+</div>

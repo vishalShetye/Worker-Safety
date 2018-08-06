@@ -1,0 +1,13 @@
+D:\1_MS-Hack_2\WorkerSafetyService\bin\Debug\netcoreapp2.1\WorkerSafetyService.deps.json
+D:\1_MS-Hack_2\WorkerSafetyService\bin\Debug\netcoreapp2.1\WorkerSafetyService.runtimeconfig.json
+D:\1_MS-Hack_2\WorkerSafetyService\bin\Debug\netcoreapp2.1\WorkerSafetyService.runtimeconfig.dev.json
+D:\1_MS-Hack_2\WorkerSafetyService\bin\Debug\netcoreapp2.1\WorkerSafetyService.dll
+D:\1_MS-Hack_2\WorkerSafetyService\bin\Debug\netcoreapp2.1\WorkerSafetyService.pdb
+D:\1_MS-Hack_2\WorkerSafetyService\obj\Debug\netcoreapp2.1\WorkerSafetyService.csproj.CoreCompileInputs.cache
+D:\1_MS-Hack_2\WorkerSafetyService\obj\Debug\netcoreapp2.1\WorkerSafetyService.RazorAssemblyInfo.cache
+D:\1_MS-Hack_2\WorkerSafetyService\obj\Debug\netcoreapp2.1\WorkerSafetyService.RazorAssemblyInfo.cs
+D:\1_MS-Hack_2\WorkerSafetyService\obj\Debug\netcoreapp2.1\WorkerSafetyService.AssemblyInfoInputs.cache
+D:\1_MS-Hack_2\WorkerSafetyService\obj\Debug\netcoreapp2.1\WorkerSafetyService.AssemblyInfo.cs
+D:\1_MS-Hack_2\WorkerSafetyService\obj\Debug\netcoreapp2.1\WorkerSafetyService.RazorTargetAssemblyInfo.cache
+D:\1_MS-Hack_2\WorkerSafetyService\obj\Debug\netcoreapp2.1\WorkerSafetyService.dll
+D:\1_MS-Hack_2\WorkerSafetyService\obj\Debug\netcoreapp2.1\WorkerSafetyService.pdb
