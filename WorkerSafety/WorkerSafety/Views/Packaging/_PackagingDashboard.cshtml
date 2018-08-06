@@ -39,50 +39,55 @@
             </style>
 
             <div class="panel-body">
-
+                @{ 
+                    var i = 1;
+                    var b = 1000;
+                }
                 @foreach (var item in Model)
                 {
+                    
+                    b = 1000 + i;
                     @*MachineType currentMachineType = null;
-                    Fujitsu.Predict.Models.Machine currentMachine = null;
-                    @foreach (Fujitsu.Predict.Models.Machine machine in ViewBag.MachineList)
+            Fujitsu.Predict.Models.Machine currentMachine = null;
+            @foreach (Fujitsu.Predict.Models.Machine machine in ViewBag.MachineList)
+            {
+                if (machine.machineId == item.machineId)
+                {
+                    currentMachine = null;
+                    @foreach (MachineType mType in ViewBag.machineTypes)
                     {
-                        if (machine.machineId == item.machineId)
+                        if (mType.machineType == machine.machineType)
                         {
-                            currentMachine = null;
-                            @foreach (MachineType mType in ViewBag.machineTypes)
-                            {
-                                if (mType.machineType == machine.machineType)
-                                {
-                                    currentMachineType = mType;
-                                    currentMachine = machine;
-                                    break;
-                                }
-                            }
-                        }
-
-                        if (currentMachine != null)
-                        {
+                            currentMachineType = mType;
+                            currentMachine = machine;
                             break;
                         }
                     }
-                    double idatediff = 0;
-                    var sTts = item.TTS;
-                    var predictWindow = currentMachine.predictionWindow;
-                    int ipredictWindow = 0;
-                    Int32.TryParse(predictWindow, out ipredictWindow);
+                }
 
-                    bool bTts = sTts.ToString().Contains("Not failing");
-                    if (bTts)
-                    {
-                        sTts = item.TTS;
-                    }
-                    else
-                    {
-                        DateTime dateTts;
-                        DateTime.TryParse(sTts, out dateTts);
-                        idatediff = Utility.DateDiffInDays(dateTts);
-                        sTts = idatediff + " days";
-                    }*@
+                if (currentMachine != null)
+                {
+                    break;
+                }
+            }
+            double idatediff = 0;
+            var sTts = item.TTS;
+            var predictWindow = currentMachine.predictionWindow;
+            int ipredictWindow = 0;
+            Int32.TryParse(predictWindow, out ipredictWindow);
+
+            bool bTts = sTts.ToString().Contains("Not failing");
+            if (bTts)
+            {
+                sTts = item.TTS;
+            }
+            else
+            {
+                DateTime dateTts;
+                DateTime.TryParse(sTts, out dateTts);
+                idatediff = Utility.DateDiffInDays(dateTts);
+                sTts = idatediff + " days";
+            }*@
                     <div class="col-md-4">
                         <a href="">
                             @{
@@ -90,92 +95,95 @@
                                 var divClass = "bg-color-green";
                                 var divFooterClass = "back-footer-green";
                                 @*var operatingIconClass = "fa-cog fa-spin";
-                var operatingStatus = "Operating";
-                var divId = "HealtyMachine";
-                var sRul = "N/A";
-                double rul = 0.0;
-                bool bRul = Double.TryParse(item.RUL, out rul);
-                if (bRul)
-                {
-                    sRul = rul.ToString();
-                }
-                if (bTts == false)
-                {
-                    if (idatediff <= 0)
-                    {
-                        sTts = "Now";
-                    }
-                    else
-                    {
-                        sTts = idatediff + " days";
-                    }
-                }
-            }
-            @if (item.activeSensors < item.totalSensors || item.activeSensors == 0 || item.totalSensors == 0)
-            {
-                divClass = "bg-color-amber";
-                divId = "LessSensorMachine";
-                divFooterClass = "back-footer-amber";
-                operatingIconClass = "fa-question";
-                operatingStatus = "Unknown";
-                sTts = "N/A";
-            }
-            else if (item.faulted == 1)
-            {
-                divClass = "bg-color-red";
-                divId = "FaultyMachine";
-                divFooterClass = "back-footer-red";
-                operatingIconClass = "fa-cog";
-                operatingStatus = "Faulted";
-                sTts = "Now";
-            }
-            else if (bTts == false)
-            {
-                if (idatediff < Double.Parse(currentMachine.predictionWindow))
-                {
-                    divClass = "bg-color-black";
-                    divId = "RULMachine";
-                    divFooterClass = "back-footer-red";
-                    operatingIconClass = "fa-exclamation-triangle";
-                    operatingStatus = "Alert";
+                            var operatingStatus = "Operating";
+                            var divId = "HealtyMachine";
+                            var sRul = "N/A";
+                            double rul = 0.0;
+                            bool bRul = Double.TryParse(item.RUL, out rul);
+                            if (bRul)
+                            {
+                                sRul = rul.ToString();
+                            }
+                            if (bTts == false)
+                            {
+                                if (idatediff <= 0)
+                                {
+                                    sTts = "Now";
+                                }
+                                else
+                                {
+                                    sTts = idatediff + " days";
+                                }
+                            }
+                        }
+                        @if (item.activeSensors < item.totalSensors || item.activeSensors == 0 || item.totalSensors == 0)
+                        {
+                            divClass = "bg-color-amber";
+                            divId = "LessSensorMachine";
+                            divFooterClass = "back-footer-amber";
+                            operatingIconClass = "fa-question";
+                            operatingStatus = "Unknown";
+                            sTts = "N/A";
+                        }
+                        else if (item.faulted == 1)
+                        {
+                            divClass = "bg-color-red";
+                            divId = "FaultyMachine";
+                            divFooterClass = "back-footer-red";
+                            operatingIconClass = "fa-cog";
+                            operatingStatus = "Faulted";
+                            sTts = "Now";
+                        }
+                        else if (bTts == false)
+                        {
+                            if (idatediff < Double.Parse(currentMachine.predictionWindow))
+                            {
+                                divClass = "bg-color-black";
+                                divId = "RULMachine";
+                                divFooterClass = "back-footer-red";
+                                operatingIconClass = "fa-exclamation-triangle";
+                                operatingStatus = "Alert";
 
-                    if (idatediff <= 0)
-                    {
-                        sTts = "Now";
-                    }
-                    else
-                    {
-                        sTts = idatediff + " days";
-                    }
-                }*@
+                                if (idatediff <= 0)
+                                {
+                                    sTts = "Now";
+                                }
+                                else
+                                {
+                                    sTts = idatediff + " days";
+                                }
+                            }*@
                             }
                             <div class="panel panel-primary no-boder @divClass macTile">
                                 <div class="panel-body">
 
                                     <ul class="list-group">
                                         <li class="list-group-item justify-content-between">
-                                            Device ID
-                                            <span class="pull-right badge-custom">@item.DeviceId</span>
+                                            Worker id :
+                                            <span class="pull-right badge-custom">@b</span>
                                         </li>
                                         <li class="list-group-item justify-content-between">
-                                            Temperature
+                                            Work Rate
                                             <span class="pull-right badge-custom">@item.Temperature</span>
                                         </li>
                                         <li class="list-group-item justify-content-between">
-                                            Humidity
+                                            Health %
                                             <span class="pull-right badge-custom">@item.Humidity</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="panel-footer @divFooterClass">
-                                  
+
                                     <i class="fa fa-arrow-circle-right pull-right fa-2x"></i>
                                 </div>
                             </div>
                         </a>
                     </div>
-                }
-            </div>
+                   
+                        i = i + 1;
+                    
+                    }
+                </div>
             @*<input type="hidden" id="tenant" data-value="@ViewBag.tenantID" />*@
             @*</div>*@
         </div>

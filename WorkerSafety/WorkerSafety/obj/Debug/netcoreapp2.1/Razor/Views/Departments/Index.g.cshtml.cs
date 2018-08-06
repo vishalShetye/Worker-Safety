@@ -77,7 +77,7 @@ using WorkerSafety.Models;
             WriteLiteral("                                    <h3 class=\"font-bold no-margins\">\r\n                                        ");
             EndContext();
             BeginContext(652, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8730b9c5fac84ef1b27dca746a3b9025", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3707a5654b14ed1a973dc50362f466e", async() => {
                 BeginContext(701, 9, true);
                 WriteLiteral("Packaging");
                 EndContext();
@@ -189,7 +189,7 @@ using WorkerSafety.Models;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(6266, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e8157d7079c04550a41448f6c20894a1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c79afe2398404c6186ce9d05399e1c0b", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

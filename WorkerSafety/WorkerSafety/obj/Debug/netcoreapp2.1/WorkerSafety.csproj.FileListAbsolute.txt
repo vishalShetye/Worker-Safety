@@ -133,3 +133,4 @@ D:\1_MS-Hack_2\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.dl
 D:\1_MS-Hack_2\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.pdb
 D:\1_MS-Hack_2\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csproj.CopyComplete
 D:\1_MS-Hack_2\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Packaging\Index.g.cshtml.cs
+D:\1_MS-Hack_2\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csprojAssemblyReference.cache
