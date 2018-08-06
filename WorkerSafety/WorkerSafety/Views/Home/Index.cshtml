@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Dashboard
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="panel panel-primary">
+                    <a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">Productivity Ratio</span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="huge">9126</div>
+                                <div class="medium">Last Hour Increase</div><div class="green"><i class="fa fa-arrow-up"></i> 13.8%</div>
+                            </div>
+                            <div class="col-xs-3 active ">
+                                <i class="fa fa-comments fa-5x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="panel panel-green">
+                    <a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">Number of incident</span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="huge">26</div>
+                                <div class="medium">Compare to Last Month</div><div class="green"><i class="fa fa-arrow-down"></i> 10.8%</div>
+                            </div>
+                            <div class="col-xs-3 active ">
+                                <i class="fa fa-comments fa-5x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="panel panel-red">
+                    <a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">Departmental Occupancy</span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="huge">26</div>
+                                <div class="green"><i class="fa fa-arrow-up"></i> 20.8%</div>
+                            </div>
+                            <div class="col-xs-3 active ">
+                                <i class="fa fa-comments fa-5x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Productivity Ratio Aspects</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="morris-area-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Departmental Incidents</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="morris-donut-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+
+

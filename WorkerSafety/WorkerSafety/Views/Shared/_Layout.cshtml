@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@ViewData["Title"] - WorkerSafety</title>
+
+    @*<environment include="Development">*@
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="~/css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="~/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="~/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    @*</environment>*@
+    @*<environment include="Development">*@
+    @*<script src="~/lib/jquery/dist/jquery.js"></script>*@
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+    @*</environment>*@
+    @*<environment exclude="Development">*@
+    @*<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>*@
+    @*<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>*@
+
+    @*<script src="~/js/site.min.js" asp-append-version="true"></script>*@
+    <script src="~/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="~/js/plugins/morris/raphael.min.js"></script>
+    <script src="~/js/plugins/morris/morris.js"></script>
+    <script src="~/js/plugins/morris/morris.min.js"></script>
+    <script src="~/js/plugins/morris/morris-data.js"></script>
+    @*</environment>*@
+</head>
+<body>
+    <div id="wrapper">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="~/img/FujitsuParking_logo.png"></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li>
+                    <div class="form-group">
+                        <label for="locationSelect"></label>
+                        <select class="form-control" id="locationSelect">
+                            <option>Noida</option>
+                            <option>Pune</option>
+                            <option>hyderabad</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Vishal Shetye <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active"> <a asp-controller="Home" asp-action="Index"><em class="fa fa-fw fa-dashboard"></em> Dashboard</a> </li>
+                    <li> <a asp-controller="Departments" asp-action="Index"><em class="fa fa-fw fa-eye"></em> Departments</a> </li>
+                    <!-- <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo" class="collapse">
+                        <li>
+                            <a href="#">Dropdown Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Dropdown Item</a>
+                        </li>
+                    </ul>
+                </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <div id="page-wrapper">
+            @*<partial name="_CookieConsentPartial" />*@
+            @*<div class="container body-content">*@
+
+            @*<div class="page-inner">*@
+            @RenderBody()
+            @*<hr />*@
+            <footer>
+                <p>&copy; 2018 - WorkerSafety</p>
+            </footer>
+            @*</div>*@
+        </div>
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

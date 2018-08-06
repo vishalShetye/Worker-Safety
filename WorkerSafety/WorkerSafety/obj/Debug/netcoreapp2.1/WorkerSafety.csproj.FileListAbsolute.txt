@@ -1,0 +1,101 @@
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.deps.json
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.runtimeconfig.json
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.runtimeconfig.dev.json
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.dll
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.pdb
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.Views.dll
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.Views.pdb
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csproj.CoreCompileInputs.cache
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorAssemblyInfo.cache
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorAssemblyInfo.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.AssemblyInfoInputs.cache
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.AssemblyInfo.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.TagHelpers.input.cache
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.TagHelpers.output.cache
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorCoreGenerate.cache
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorTargetAssemblyInfo.cache
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorTargetAssemblyInfo.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.Views.pdb
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.dll
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.pdb
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csproj.CopyComplete
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
+D:\1_MS-Hack_1\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Packaging\Index.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.deps.json
+D:\shared folder\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.runtimeconfig.json
+D:\shared folder\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.runtimeconfig.dev.json
+D:\shared folder\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.dll
+D:\shared folder\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.pdb
+D:\shared folder\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.Views.dll
+D:\shared folder\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.Views.pdb
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csprojAssemblyReference.cache
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csproj.CoreCompileInputs.cache
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorAssemblyInfo.cache
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorAssemblyInfo.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.AssemblyInfoInputs.cache
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.AssemblyInfo.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.TagHelpers.input.cache
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.TagHelpers.output.cache
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorCoreGenerate.cache
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Packaging\Index.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorTargetAssemblyInfo.cache
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorTargetAssemblyInfo.cs
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.Views.pdb
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.dll
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.pdb
+D:\shared folder\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csproj.CopyComplete
+D:\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.deps.json
+D:\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.runtimeconfig.json
+D:\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.runtimeconfig.dev.json
+D:\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.dll
+D:\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.pdb
+D:\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.Views.dll
+D:\WorkerSafety\WorkerSafety\bin\Debug\netcoreapp2.1\WorkerSafety.Views.pdb
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csproj.CoreCompileInputs.cache
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorAssemblyInfo.cache
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorAssemblyInfo.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.AssemblyInfoInputs.cache
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.AssemblyInfo.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.TagHelpers.input.cache
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.TagHelpers.output.cache
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorCoreGenerate.cache
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorTargetAssemblyInfo.cache
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.RazorTargetAssemblyInfo.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.Views.pdb
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.dll
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.pdb
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\WorkerSafety.csproj.CopyComplete
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Packaging\_PackagingDashboard.g.cshtml.cs
+D:\WorkerSafety\WorkerSafety\obj\Debug\netcoreapp2.1\Razor\Views\Packaging\IndexCompleted.g.cshtml.cs

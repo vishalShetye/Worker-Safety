@@ -1,0 +1,260 @@
+﻿@*@using Microsoft.AspNetCore.Identity
+@using Fujitsu.Predict.Models
+@using Fujitsu.Predict.Portals.Admin.Models
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager*@
+
+@model IEnumerable<WorkerSafety.Models.WorkerModel>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="container-fluid">*@
+@*@if (SignInManager.IsSignedIn(User))
+{*@
+    <div class="row">
+        <div class="col-md-9 col-sm-6">
+            @*<div class="panel panel-primary">*@
+            @*<div class="panel-heading">*@
+            <h2><i class="fa fa-cogs"></i> Worker</h2>
+            <hr />
+            @*<div class="row">
+                <span class="pull-right noselect" style="padding:7px 10px;background-color:#212121;opacity:.9;color:#d1d1d1;margin-right:15px;">
+                    <span style="background-color:#00CE6F;width:10px;height:10px;font-size:12px;color:#00CE6F;padding:2px 6px;"> &nbsp;Text</span> Healthy&nbsp;&nbsp;
+                    <span style="background-color:#E88247 ;width:10px;height:10px;font-size:12px;color:#E88247 ;padding:2px 6px;"> &nbsp;Text</span> Unknown&nbsp;&nbsp;
+                    <span style="background-color:#DB0630 ;width:10px;height:10px;font-size:12px;color:#DB0630;padding:2px 6px;"> &nbsp;Text</span> Faulted&nbsp;&nbsp;
+                    <span style="background-color:#000 ;width:10px;height:10px;font-size:12px;color:#000 ;padding:2px 6px;box-shadow: inset 0px -5px 0px 0px #DB0630;"> &nbsp;Text</span> Alert
+
+                </span>
+            </div>*@<br />
+
+            @*</div>*@
+            <style>
+                .macTile:hover {
+                    box-shadow: 0 0 15px 2px #111111;
+                }
+            </style>
+
+            <div class="panel-body">
+
+                @foreach (var item in Model)
+                {
+                    @*MachineType currentMachineType = null;
+                    Fujitsu.Predict.Models.Machine currentMachine = null;
+                    @foreach (Fujitsu.Predict.Models.Machine machine in ViewBag.MachineList)
+                    {
+                        if (machine.machineId == item.machineId)
+                        {
+                            currentMachine = null;
+                            @foreach (MachineType mType in ViewBag.machineTypes)
+                            {
+                                if (mType.machineType == machine.machineType)
+                                {
+                                    currentMachineType = mType;
+                                    currentMachine = machine;
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (currentMachine != null)
+                        {
+                            break;
+                        }
+                    }
+                    double idatediff = 0;
+                    var sTts = item.TTS;
+                    var predictWindow = currentMachine.predictionWindow;
+                    int ipredictWindow = 0;
+                    Int32.TryParse(predictWindow, out ipredictWindow);
+
+                    bool bTts = sTts.ToString().Contains("Not failing");
+                    if (bTts)
+                    {
+                        sTts = item.TTS;
+                    }
+                    else
+                    {
+                        DateTime dateTts;
+                        DateTime.TryParse(sTts, out dateTts);
+                        idatediff = Utility.DateDiffInDays(dateTts);
+                        sTts = idatediff + " days";
+                    }*@
+                    <div class="col-md-4">
+                        <a href="">
+                            @{
+
+                                var divClass = "bg-color-green";
+                                var divFooterClass = "back-footer-green";
+                                @*var operatingIconClass = "fa-cog fa-spin";
+                var operatingStatus = "Operating";
+                var divId = "HealtyMachine";
+                var sRul = "N/A";
+                double rul = 0.0;
+                bool bRul = Double.TryParse(item.RUL, out rul);
+                if (bRul)
+                {
+                    sRul = rul.ToString();
+                }
+                if (bTts == false)
+                {
+                    if (idatediff <= 0)
+                    {
+                        sTts = "Now";
+                    }
+                    else
+                    {
+                        sTts = idatediff + " days";
+                    }
+                }
+            }
+            @if (item.activeSensors < item.totalSensors || item.activeSensors == 0 || item.totalSensors == 0)
+            {
+                divClass = "bg-color-amber";
+                divId = "LessSensorMachine";
+                divFooterClass = "back-footer-amber";
+                operatingIconClass = "fa-question";
+                operatingStatus = "Unknown";
+                sTts = "N/A";
+            }
+            else if (item.faulted == 1)
+            {
+                divClass = "bg-color-red";
+                divId = "FaultyMachine";
+                divFooterClass = "back-footer-red";
+                operatingIconClass = "fa-cog";
+                operatingStatus = "Faulted";
+                sTts = "Now";
+            }
+            else if (bTts == false)
+            {
+                if (idatediff < Double.Parse(currentMachine.predictionWindow))
+                {
+                    divClass = "bg-color-black";
+                    divId = "RULMachine";
+                    divFooterClass = "back-footer-red";
+                    operatingIconClass = "fa-exclamation-triangle";
+                    operatingStatus = "Alert";
+
+                    if (idatediff <= 0)
+                    {
+                        sTts = "Now";
+                    }
+                    else
+                    {
+                        sTts = idatediff + " days";
+                    }
+                }*@
+                            }
+                            <div class="panel panel-primary no-boder @divClass macTile">
+                                <div class="panel-body">
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item justify-content-between">
+                                            Device ID
+                                            <span class="pull-right badge-custom">@item.DeviceId</span>
+                                        </li>
+                                        <li class="list-group-item justify-content-between">
+                                            Temperature
+                                            <span class="pull-right badge-custom">@item.Temperature</span>
+                                        </li>
+                                        <li class="list-group-item justify-content-between">
+                                            Humidity
+                                            <span class="pull-right badge-custom">@item.Humidity</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="panel-footer @divFooterClass">
+                                  
+                                    <i class="fa fa-arrow-circle-right pull-right fa-2x"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+            @*<input type="hidden" id="tenant" data-value="@ViewBag.tenantID" />*@
+            @*</div>*@
+        </div>
+        @*<div class="col-md-3 col-sm-6">
+            <h2><i class="fa fa-rss"></i> Notifications</h2><hr />
+            <div class="feed" id="discussion" style="box-shadow:0 0 6px 0 #212121;min-height:500px;">
+                @foreach (Notification sigR in ViewBag.sigLists)
+                {
+                    <section class="feed-item">
+                        <div class="icon pull-left"><i class="fa fa-envelope-square"></i></div>
+                        <div class="feed-item-body">
+                            <div class="text"> @Html.Raw(sigR.message) </div>
+                            <div class="time pull-left"> @sigR.timestamp </div>
+                        </div>
+                    </section>
+                }
+            </div>
+        </div>*@
+    </div>
+@*}
+else
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Welcome to Fujitsu Predict Admin Portal</h2>
+            <h3><a asp-area="" asp-controller="Account" asp-action="Login">Log in</a> to proceed</h3>
+        </div>
+    </div>
+}*@
+
+@*</div>*@
+
+@*@section scripts {
+    <!--Script references. -->
+    <!--The jQuery library is required and is referenced by default in _Layout.cshtml. -->
+    <!--Reference the SignalR library. -->
+    @*<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.0.min.js"></script>*@
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.signalR-2.2.0.min.js"></script>
+    <!--Reference the autogenerated SignalR hub script. -->
+    <script src="~/signalr/hubs"></script>
+    <!--SignalR script to update the chat page and send messages.-->
+
+    <script>
+        $(function () {
+            var customVal = $("#tenant").data("value");
+            //alert("The ID you need: " + customVal);
+            // Reference the auto-generated proxy for the hub.
+            var chat = $.connection.adminNotifyHub;
+            // Create a function that the hub can call back to display messages.
+            chat.client.adminNotification = function (message) {
+                // Add the message to the page.
+                //$('#discussion').append('<li>'+ htmlEncode(message) + '</li>');
+                $('#discussion').append('<section class="feed-item"><div class="icon pull-left"><i class="fa fa-envelope-square"></i></div><div class="feed-item-body"><div class="text"> ' + '' + ' <a href="#"> ' + htmlEncode(message) + ' </a> registration request.</div><div class="time pull-left"> just now. </div></div></section>');
+            };
+            // Start the connection.
+            $.connection.hub.start(function () {
+                chat.server.joinDomain(customVal);
+            });
+        });
+        // This optional function html-encodes messages for display in the page.
+        function htmlEncode(value) {
+            var encodedValue = $('<div />').text(value).html();
+            return encodedValue;
+        }
+
+        function blinker() {
+            //alert('Test');
+            //console.log($('.panel panel-primary no-boder bg-color-red'));
+            $('#FaultyMachine').fadeIn(300);
+            $('#FaultyMachine').fadeOut(300);
+            // $('.panel panel-primary no-boder bg-color-red').fadeIn(500);
+        }
+
+        setInterval(blinker, 1000);
+    </script>
+} *@
+
+
+
+
